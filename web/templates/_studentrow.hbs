@@ -1,0 +1,18 @@
+<tr class={{activeStudent active}}>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>
+      {{counter}}
+      {{#if active}}
+        <a class="tiny label secondary" onclick={{incrementCounterManually id}}>+</a>
+        <a class="tiny label secondary" onclick={{decrementCounterManually id}}>-</a>
+      {{/if}}
+    </td>
+    <td>
+      {{#if active}}
+        <a class="tiny button success" onclick={{toggleActiveStudentFunction id}}>active</a>
+      {{else}}
+        <a class="tiny button alert" onclick={{toggleActiveStudentFunction id}}>not active</a>
+      {{/if}}
+    </td>
+</tr>

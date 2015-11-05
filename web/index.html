@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Random student application</title>
+  <meta name="description" content="Random student application">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+
+
+</head>
+
+<body>
+  <div class="row">
+    <div class="small-7 large-7 columns">
+      <div class="panel">
+        <div id="table"></div>
+        <div id="buttons-wrapper">
+          <a class="button small" onclick="generate()" >generate random student</a>
+          <a class="button small alert" onclick="restart()" >restart counters</a>
+        </div>
+      </div>
+    </div>
+    <div class="small-5 large-5 columns">
+      <div class="panel">
+        <div id="history">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal"></div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+  <script src="js/collection/data.js"></script>
+  <script src="js/tpl/templates.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/model/student.js"></script>
+  <script src="js/model/history.js"></script>
+  <script src="js/model/modal.js"></script>
+  <script src="js/model/table.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.student-tr-not-active {
+  opacity: 0.4;
+
+}
+
+.tiny.button{
+  margin: 0px !important;
+}
+
+table tr td{
+  font-size: 10px !important;
+  padding: 1px 15px !important
+}
+
+#history p{
+  font-size: 9px !important;
+  margin: 3px
+}
